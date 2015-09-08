@@ -5,5 +5,5 @@
 *.summary
 *.smsg
 *.bak
-/db/*
-/incremental_db/*
+db/
+incremental_db/
