@@ -1,0 +1,8 @@
+*.rpt
+*.done
+*.jdi
+*.pin
+*.summary
+*.smsg
+*.bak
+!/src/*
