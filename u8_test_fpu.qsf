@@ -37,16 +37,13 @@
 
 
 set_global_assignment -name FAMILY "Cyclone III"
-set_global_assignment -name DEVICE EP3C10E144C8
+set_global_assignment -name DEVICE Auto
 set_global_assignment -name TOP_LEVEL_ENTITY u8_test_fpu
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "11.1 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:54:37  SEPTEMBER 08, 2015"
 set_global_assignment -name LAST_QUARTUS_VERSION "11.1 SP1"
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
-set_global_assignment -name DEVICE_FILTER_PACKAGE TQFP
-set_global_assignment -name DEVICE_FILTER_PIN_COUNT 144
-set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 8
 set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
 set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
@@ -62,7 +59,6 @@ set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name VHDL_FILE src/u8_test_fpu.vhd
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name FLOW_ENABLE_IO_ASSIGNMENT_ANALYSIS ON
@@ -170,4 +166,18 @@ set_location_assignment PIN_28 -to VS_XDCS
 
 set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 MHz" -to DCLK
 set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
+set_global_assignment -name VHDL_FILE src/keyboard/ps2_intf.vhd
+set_global_assignment -name VHDL_FILE src/keyboard/keyboard.vhd
+set_global_assignment -name VHDL_FILE src/video/spec_video_60.vhd
+set_global_assignment -name VHDL_FILE src/T80/T80se.vhd
+set_global_assignment -name VHDL_FILE src/T80/T80a.vhd
+set_global_assignment -name VHDL_FILE src/T80/T80_Reg.vhd
+set_global_assignment -name VHDL_FILE src/T80/T80_Pack.vhd
+set_global_assignment -name VHDL_FILE src/T80/T80_MCode.vhd
+set_global_assignment -name VHDL_FILE src/T80/T80_ALU.VHD
+set_global_assignment -name VHDL_FILE src/T80/T80.VHD
+set_global_assignment -name VHDL_FILE src/u8_test_fpu.vhd
+set_global_assignment -name QIP_FILE src/pll/altpll0.qip
+set_global_assignment -name QIP_FILE src/ram/ram0.qip
+set_global_assignment -name QIP_FILE src/ram/video_ram0.qip
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

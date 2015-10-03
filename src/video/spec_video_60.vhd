@@ -11,9 +11,9 @@
 -- V1.00	14.07.2013:
 --		Initial release.
 -- V1.01 16.07.2013:
---		Добавлены сигналы INT, INTA
+--		пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ INT, INTA
 -- V1.02 20.07.2013:
---      небольшие оптимизации
+--      пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 -- V1.03 07.09.2013:
 --      final release
 -------------------------------------------------------------------------------
@@ -31,7 +31,7 @@ entity spec_video_60 is
 		BORDER		: in std_logic_vector(2 downto 0);
 		ADDR		: out std_logic_vector(12 downto 0);
 		INTA		: in std_logic;
-		INT			: out std_logic;
+		INT		: out std_logic;
 		R			: out std_logic_vector(2 downto 0);
 		G			: out std_logic_vector(2 downto 0);
 		B			: out std_logic_vector(2 downto 0);
